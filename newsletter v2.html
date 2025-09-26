@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>النشرة الإخبارية</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 650px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .header {
+      background: #0d1b2a; /* أزرق داكن رسمي */
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .article {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .article-placeholder {
+      width: 140px; /* أصغر حجم */
+      min-height: 100px; /* أصغر ارتفاع */
+      border-radius: 6px;
+      background-color: #2e3b4e; /* رمادي داكن رسمي */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 13px;
+      color: #e0e0e0; /* نص فاتح للوضوح */
+      padding: 8px;
+      flex-shrink: 0;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .article-placeholder:hover {
+      background-color: #3f5068; /* أفتح قليلا عند Hover */
+      transform: translateY(-3px);
+    }
+    .article-content {
+      flex: 1;
+    }
+    .article-content h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #0d1b2a; /* عنوان داكن رسمي */
+    }
+    .article-content p {
+      margin: 0 0 15px;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #0d1b2a; /* أزرق داكن رسمي */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #1b263b; /* أزرق أغمق عند Hover */
+    }
+    .footer {
+      background: #e0e0e0;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #555;
+    }
+    .footer a {
+      margin: 0 8px;
+      text-decoration: none;
+      color: #0d1b2a;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .article {
+        flex-direction: column;
+      }
+      .article-placeholder {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>النشرة الإخبارية – 26 سبتمبر 2025</h1>
+      <p>آخر الأخبار السياسية في السودان والعالم</p>
+    </div>
+
+    <!-- Article 1 -->
+    <div class="article">
+      <div class="article-placeholder">
+        خطاب كامل إدريس<br>في الأمم المتحدة
+      </div>
+      <div class="article-content">
+        <h2>خطاب كامل إدريس في الأمم المتحدة</h2>
+        <p>أحدثت مشاركة رئيس الوزراء د. كامل إدريس في أعمال الجمعية العامة للأمم المتحدة بنيويورك منعطفاً مهماً في مسار الأزمة السودانية...</p>
+        <a href="https://www.suna-sd.net/posts/khtab-kaml-adrys-fy-alamm-almthd-hdor-sodany-orsayl-oadh-lldakhl-oalkharg" target="_blank" class="button">اقرأ المزيد</a>
+      </div>
+    </div>
+
+    <!-- Article 2 -->
+    <div class="article">
+      <div class="article-placeholder">
+        لقاء وزير الخارجية<br>مع نظيره الإثيوبي
+      </div>
+      <div class="article-content">
+        <h2>وزير الخارجية يلتقي نظيره الإثيوبي</h2>
+        <p>التقى وزير الخارجية السفير محي الدين سالم بنيويورك بوزير الدولة الإثيوبي هديرا أبرا، حيث ناقشا سبل تعزيز العلاقات الثنائية والتطورات الإقليمية...</p>
+        <a href="https://www.suna-sd.net/posts/ozyr-alkhargy-yltky-alsfyr" target="_blank" class="button">اقرأ المزيد</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>تابعنا على:</p>
+      <a href="https://facebook.com">فيسبوك</a> | 
+      <a href="https://twitter.com">تويتر</a> | 
+      <a href="https://instagram.com">إنستجرام</a>
+      <p>© 2025 جميع الحقوق محفوظة</p>
+    </div>
+  </div>
+</body>
+</html>
