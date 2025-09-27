@@ -36,24 +36,25 @@
       gap: 15px;
       padding: 20px;
       border-bottom: 1px solid #ddd;
+      align-items: flex-start;
     }
     .article-placeholder {
-      width: 140px; /* أصغر حجم */
-      min-height: 100px; /* أصغر ارتفاع */
+      width: 140px;
+      min-height: 100px;
       border-radius: 6px;
-      background-color: #2e3b4e; /* رمادي داكن رسمي */
+      background-color: #2e3b4e;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       font-size: 13px;
-      color: #e0e0e0; /* نص فاتح للوضوح */
+      color: #e0e0e0;
       padding: 8px;
       flex-shrink: 0;
       transition: transform 0.3s, background-color 0.3s;
     }
     .article-placeholder:hover {
-      background-color: #3f5068; /* أفتح قليلا عند Hover */
+      background-color: #3f5068;
       transform: translateY(-3px);
     }
     .article-content {
@@ -62,7 +63,7 @@
     .article-content h2 {
       margin: 0 0 10px;
       font-size: 18px;
-      color: #0d1b2a; /* عنوان داكن رسمي */
+      color: #0d1b2a;
     }
     .article-content p {
       margin: 0 0 15px;
@@ -73,7 +74,7 @@
     .button {
       display: inline-block;
       padding: 10px 18px;
-      background: #0d1b2a; /* أزرق داكن رسمي */
+      background: #0d1b2a;
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
@@ -81,7 +82,7 @@
       transition: background 0.3s;
     }
     .button:hover {
-      background: #1b263b; /* أزرق أغمق عند Hover */
+      background: #1b263b;
     }
     .footer {
       background: #e0e0e0;
@@ -95,15 +96,29 @@
       text-decoration: none;
       color: #0d1b2a;
     }
-    /* Responsive */
+
+    /* Media Query للموبايل */
     @media (max-width: 600px) {
       .article {
         flex-direction: column;
+        gap: 10px;
       }
       .article-placeholder {
         width: 100%;
         height: auto;
-        padding: 15px;
+        padding: 10px;
+        flex-shrink: 1;
+        text-align: center;
+      }
+      .article-content h2 {
+        font-size: 16px;
+      }
+      .article-content p {
+        font-size: 14px;
+      }
+      .button {
+        width: 100%;
+        text-align: center;
       }
     }
   </style>
@@ -112,7 +127,7 @@
   <div class="container">
     <!-- Header -->
     <div class="header">
-      <h1>النشرة الإخبارية لقنصلية مصر في بورسودان – 26 سبتمبر 2025</h1>
+      <h1>النشرة الإخبارية – 26 سبتمبر 2025</h1>
       <p>أخبار السودان</p>
     </div>
 
@@ -146,11 +161,8 @@
       <a href="https://facebook.com">فيسبوك</a> | 
       <a href="https://twitter.com">تويتر</a> | 
       <a href="https://instagram.com">إنستجرام</a>
-      <p>© 2025 قنصلية جمهورية مصر العربية في بورسودان</p>
+      <p>© 2025 القنصلية جمهورية مصر العربية في بورسودان</p>
     </div>
   </div>
 </body>
 </html>
-
-
-
